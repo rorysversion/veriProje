@@ -1,0 +1,31 @@
+﻿@model CourseSelection.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <!-- Layout kullanıyorsanız -->
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <div>
+        <label>Kullanıcı Adı:</label>
+        @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+    </div>
+    <div>
+        <label>Şifre:</label>
+        @Html.TextBoxFor(m => m.PasswordHash, new { @class = "form-control" })
+    </div>
+    <br />
+    <button type="submit" name="role" value="Student" class="btn btn-primary">Öğrenci Girişi</button>
+    <button type="submit" name="role" value="Teacher" class="btn btn-success">Öğretmen Girişi</button>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary()
+    </div>
+}

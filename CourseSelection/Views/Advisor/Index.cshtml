@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* @model IEnumerable<CourseSelection.Models.Advisor>
+
+<h2>Advisors List</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var advisor in Model)
+    {
+        <tr>
+            <td>@advisor.FullName</td>
+            <td>@advisor.Department</td>
+            <td>@advisor.Email</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@advisor.AdvisorID" class="btn btn-info btn-sm">Detay</a>
+
+                @* <a asp-action="Courses" asp-route-id="@advisor.AdvisorID" class="btn btn-danger btn-sm">Kurslar</a> 
+            </td>
+        </tr>
+    }
+</table> *@
+
+
+@model IEnumerable<CourseSelection.Models.Advisor>
+
+<h2>Advisors List</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var advisor in Model)
+    {
+        <tr>
+            <td>@advisor.FullName</td>
+            <td>@advisor.Department</td>
+            <td>@advisor.Email</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@advisor.AdvisorID" class="btn btn-info btn-sm">Details</a>
+            </td>
+        </tr>
+    }
+</table>

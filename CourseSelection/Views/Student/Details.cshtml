@@ -1,0 +1,19 @@
+﻿@model CourseSelection.Models.Student
+
+@{
+    ViewData["Title"] = "Öğrenci Detayları";
+}
+
+<h1>Öğrenci Detayları</h1>
+<a asp-action="SelectCourse" asp-route-studentId="@Model.StudentID" class="btn btn-info">Kurs Seç</a>
+
+<div>
+    <h4>@Model.FirstName @Model.LastName</h4>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Danışman ID:</strong> @Model.AdvisorID</p>
+    <p><strong>Kayıt Tarihi:</strong> @Model.EnrollmentDate.ToShortDateString()</p>
+</div>
+
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+</p>
