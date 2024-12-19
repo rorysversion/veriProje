@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CourseSelection;
 using CourseSelection.Models;
 
 
-namespace CourseSelection.Controllers
+namespace CourseSelection.Controllers.webcontroller
 {
     public class AdvisorsController : Controller
     {
@@ -15,7 +14,7 @@ namespace CourseSelection.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
             var advisors = _context.Advisors.ToList(); // Veritabanından danışmanları çekmek
             return View(advisors); // View'e gönderme

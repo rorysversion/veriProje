@@ -15,7 +15,7 @@ namespace CourseSelection.Controllers
         // Öğrenci listesi
         public IActionResult Index(int id)
         {
-            var students = _context.Students.Where(p=> p.StudentID==id).ToList();
+            var students = _context.Students.Where(p => p.StudentID == id).ToList();
             return View(students);
         }
 
@@ -106,5 +106,7 @@ namespace CourseSelection.Controllers
             return RedirectToAction(nameof(Index));
         }
     }
+
+
 }
 

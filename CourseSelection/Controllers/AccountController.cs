@@ -41,7 +41,7 @@ namespace CourseSelection.Controllers
                     }
                     else if (user.Role == "Advisor")
                     {
-                        return RedirectToAction("Index", "Advisor", new { id = user.RelatedID });
+                        return RedirectToAction("Index", "Advisors", new { id = user.RelatedID });
                     }
                 }
                 else
