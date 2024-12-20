@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CourseSelection.Models;
+using System.Security.Claims;
 
 namespace CourseSelection.Controllers
 {
@@ -83,30 +84,38 @@ namespace CourseSelection.Controllers
 
             return RedirectToAction(nameof(Details), new { id = studentId });
         }
+        [HttpPost]
+        public IActionResult Select_Course(int courseId,int id)
+        {
+            // Öğrencinin kimliğini alın (kullanıcı oturumundan)
+            //var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;  // Örnek olarak, kullanıcı ID'si claim'den alınır.
+            var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            
 
+            var student = _context.Students.FirstOrDefault(s => s.StudentID == id);
+            
+            if (student != null)
+            {
+                // Seçilen kursu öğrenciye ekle
+                var courseSelection = new StudentCourseSelection
+                {
+                    StudentID = student.StudentID,
+                    CourseID = courseId,
+                    //IsSelected = true
+                };
+
+                _context.StudentCourseSelections.Add(courseSelection);
+                _context.SaveChanges();
+
+                TempData["Message"] = "Kurs başarıyla seçildi!";
+            }
+
+            return RedirectToAction("Index"); // Kurs listesine geri dön
+        }
 
         // Öğrenci silme
-        public IActionResult Delete(int id)
-        {
-            var student = _context.Students.Find(id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            return View(student);
-        }
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var student = _context.Students.Find(id);
-            _context.Students.Remove(student);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
+
     }
-
-
 }
 

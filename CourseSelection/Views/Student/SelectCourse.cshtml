@@ -1,11 +1,4 @@
 ﻿@model IEnumerable<CourseSelection.Models.Course>
-@* @model CourseSelection.Models.Student
-@model CourseSelection.Models.Course *@
-@{
-    ViewBag.Title = "Kurs Listesi";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    <!-- Layout kullanıyorsanız -->
-}
 
 <h2>Kurs Listesi</h2>
 
@@ -18,8 +11,10 @@
     <thead>
         <tr>
             <th>Kurs Adı</th>
-            <th>Açıklama</th>
-            <th>Kontenjan</th>
+            <th>Kurs Kodu</th>
+            <th>Kredi</th>
+            <th>Zorunlu mu?</th>
+            
             <th>İşlem</th>
         </tr>
     </thead>
@@ -28,7 +23,9 @@
         {
             <tr>
                 <td>@course.CourseName</td>
-                
+                <td>@course.CourseCode</td>
+                <td>@course.Credit</td>
+                <td>@(course.IsMandatory ? "Evet" : "Hayır")</td>
                 
                 <td>
                     @using (Html.BeginForm("SelectCourse", "Student", FormMethod.Post))
@@ -41,4 +38,5 @@
         }
     </tbody>
 </table>
+
 
