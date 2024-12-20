@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CourseSelection.Models;
 using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace CourseSelection.Controllers
 {
@@ -50,7 +51,98 @@ namespace CourseSelection.Controllers
             return View(student);
         }
 
+        [HttpGet("CourseSelection")]
+        public async Task<IActionResult> CourseSelection(int id)
+        {
+            // Öğrenci, ders seçimleri ve danışmanı al
+            var student = await _context.Students
+                                         .Include(s => s.StudentCourseSelections)
+                                             .ThenInclude(sc => sc.Course)
+                                         .Include(s => s.Advisor) // Advisor bilgisi dahil edildi
+                                         .FirstOrDefaultAsync(s => s.StudentID == id);
+
+
+            // Eğer öğrenci bulunamazsa hata mesajı gönderin
+            if (student == null)
+            {
+                ViewBag.Message = "Student not found.";
+                return View(); // Boş bir View döner
+            }
+
+            // Öğrenci modelini View'a gönderin
+            return View(student); // Student modelini gönderiyoruz
+        }
+        [HttpPost]
+        public async Task<IActionResult> SubmitCourseSelection(int id, List<int> SelectedCourseIds)
+        {
+            // Öğrenciyi veritabanından al
+            var student = await _context.Students
+                                        .Include(s => s.StudentCourseSelections)
+                                        .FirstOrDefaultAsync(s => s.StudentID == id);
+
+            if (student == null)
+            {
+                TempData["Message"] = "Student not found.";
+                return RedirectToAction("CourseSelection", new { id });
+            }
+
+            // Seçilen dersleri al ve öğrenciye ekle
+            if (SelectedCourseIds != null && SelectedCourseIds.Any())
+            {
+                foreach (var courseId in SelectedCourseIds)
+                {
+                    // Seçilen ders veritabanında var mı kontrol et
+                    var course = await _context.Courses.FindAsync(courseId);
+                    if (course != null)
+                    {
+                        var selection = new StudentCourseSelection
+                        {
+                            StudentID = student.StudentID,
+                            CourseID = course.CourseID
+                        };
+
+                        _context.StudentCourseSelections.Add(selection);
+                    }
+                }
+
+                await _context.SaveChangesAsync();
+                TempData["Message"] = "Courses selected successfully!";
+            }
+            else
+            {
+                TempData["Message"] = "No courses selected.";
+            }
+
+            return RedirectToAction("CourseSelection", new { id });
+        }
+
         // Kurs seçimi formunu gösteren GET aksiyonu
+        //[HttpPost]
+        //public IActionResult SelectCourse(int courseId, string studentId)
+        //{
+        //    // Öğrenciyi oturumdan almak
+        //    var student = _context.Students.FirstOrDefault(s => s.StudentID == int.Parse(studentId));
+
+        //    if (student == null)
+        //    {
+        //        TempData["Message"] = "Öğrenci bulunamadı!";
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    // Kursu öğrenciye ekle
+        //    var courseSelection = new StudentCourseSelection
+        //    {
+        //        StudentID = student.StudentID,
+        //        CourseID = courseId
+        //    };
+
+        //    _context.StudentCourseSelections.Add(courseSelection);
+        //    _context.SaveChanges();
+
+        //    TempData["Message"] = "Kurs başarıyla seçildi!";
+        //    return RedirectToAction("Index"); // Kurs listesine geri dön
+        //}
+
         public IActionResult SelectCourse(int studentId)
         {
             var student = _context.Courses?.ToList() ?? new List<Course>();

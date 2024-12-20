@@ -46,7 +46,7 @@ namespace CourseSelection.Controllers.webcontroller
 
         public IActionResult MyStudents(int id)
         {
-           
+
             var students = _context.Students
                 .Where(s => s.AdvisorID == id)
                 .ToList();
@@ -55,8 +55,39 @@ namespace CourseSelection.Controllers.webcontroller
                 return NotFound();
             }
             return View(students); // Öğrencilerin listesi gönderiliyor
-        
 
+        }
+
+        [HttpGet("ViewStudentCourses/{studentId}")]
+        public IActionResult ViewStudentCourses(int studentId)
+        {
+            // Öğrenciyi ve seçtiği dersleri çekiyoruz
+            var student = _context.Students
+                .Include(s => s.StudentCourseSelections)
+                    .ThenInclude(sc => sc.Course)
+                .FirstOrDefault(s => s.StudentID == studentId);
+
+            if (student == null)
+            {
+                return NotFound(new { Message = "Student not found." });
+            }
+
+            return View(student);
+        }
+        [HttpGet("ApproveCourses")]
+        public IActionResult ApproveCourses(int id)
+        {
+            // Danışman tarafından onaylanacak dersler burada işlenir.
+            var advisor = _context.Advisors
+                .Include(a => a.Students)
+                .FirstOrDefault(a => a.AdvisorID == id);
+
+            if (advisor == null)
+            {
+                return NotFound(new { Message = "Advisor not found." });
+            }
+            return View(advisor);
+        }
         //// Advisor ID'ye göre danışman ve öğrencileri alınıyor
         //var students = _context.Advisors
         //    .Where(a => a.AdvisorID == id)
@@ -152,5 +183,5 @@ namespace CourseSelection.Controllers.webcontroller
 
 
 }
-}
+
 

@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Advisors/ApproveCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aXNvcnNcQXBwcm92ZUNvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Advisors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aXNvcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Advisors/PersonalInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aXNvcnNcUGVyc29uYWxJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Advisors/ViewStudenCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aXNvcnNcVmlld1N0dWRlbkNvdXJzZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Home/Index.cshtml]
@@ -70,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Student/CourseSelection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDb3Vyc2VTZWxlY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahsen/Desktop/veriProje/veriYeni/CourseSelection/Views/Student/Create.cshtml]

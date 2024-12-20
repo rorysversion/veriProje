@@ -1,4 +1,48 @@
-﻿@model IEnumerable<CourseSelection.Models.Course>
+﻿@* @using System.Security.Claims
+@model IEnumerable<CourseSelection.Models.Course>
+
+<h2>Kurs Listesi</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Kurs Adı</th>
+            <th>Kurs Kodu</th>
+            <th>Kredi</th>
+            <th>Zorunlu mu?</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.CourseName</td>
+                <td>@course.CourseCode</td>
+                <td>@course.Credit</td>
+                <td>@(course.IsMandatory ? "Evet" : "Hayır")</td>
+
+                <td>
+                    @using (Html.BeginForm("SelectCourse", "Student", FormMethod.Post))
+                    {
+                        @Html.Hidden("courseId", course.CourseID)
+                        @Html.Hidden("studentId", @User.FindFirst(ClaimTypes.NameIdentifier).Value) <!-- Öğrenci ID'sini gönder -->
+                        <button type="submit" class="btn btn-primary">Seç</button>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+
+@model IEnumerable<CourseSelection.Models.Course>
 
 <h2>Kurs Listesi</h2>
 
@@ -31,7 +75,8 @@
                     @using (Html.BeginForm("SelectCourse", "Student", FormMethod.Post))
                     {
                         @Html.Hidden("courseId", course.CourseID)
-                        <button type="submit" class="btn btn-primary">Seç</button>
+                        //<button type="submit" class="btn btn-primary">Seç</button>
+                        <a asp-action="CourseSelection" asp-route-id="@course.CourseID" class="btn btn-info btn-sm">secim yap</a>
                     }
                 </td>
             </tr>
