@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CourseSelection.Models.Advisor>
+﻿@* @model IEnumerable<CourseSelection.Models.Advisor>
 
 @{
     ViewData["Title"] = "Öğrenci Listesi";
@@ -18,4 +18,40 @@
 
         <p>hello</p>
     </tbody>
-</table>
+</table> *@
+@model List<CourseSelection.Models.Advisor>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advisors List</title>
+</head>
+<body>
+    <h1>Advisors</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Advisor ID</th>
+                <th>Full Name</th>
+                <th>Title</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var advisor in Model)
+            {
+                <tr>
+                    <td>@advisor.AdvisorID</td>
+                    <td>@advisor.FullName</td>
+                    <td>@advisor.Title</td>
+                    <td>@advisor.Department</td>
+                    <td>@advisor.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+
