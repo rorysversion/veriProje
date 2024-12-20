@@ -1,6 +1,28 @@
-﻿@model IEnumerable<CourseSelection.Models.Course>
-@* @model CourseSelection.Models.Student
-@model CourseSelection.Models.Course *@
+﻿@model CourseSelection.Models.Advisor
+
+@{
+    ViewData["Title"] = "Öğrenci Detayları";
+}
+
+<h1>Öğrenci Detayları</h1>
+<a asp-action="SelectCourse" asp-route-studentId="@Model.AdvisorID" class="btn btn-info">Kurs Seç</a>
+
+<div>
+    <h4>@Model.FullName</h4>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>ID:</strong> @Model.AdvisorID</p>
+    
+</div>
+
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+</p>
+
+
+
+@* @model IEnumerable<CourseSelection.Models.Course>
+ @model CourseSelection.Models.Student
+@model CourseSelection.Models.Course 
 @{
     ViewBag.Title = "Kurs Listesi";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -40,4 +62,4 @@
             </tr>
         }
     </tbody>
-</table>
+</table> *@

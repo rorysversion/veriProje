@@ -27,42 +27,51 @@
     <title>Advisors</title>
     <style>
         table {
-            width: 100%;
-            border-collapse: collapse;
+        width: 100%;
+        border-collapse: collapse;
         }
+
         table, th, td {
-            border: 1px solid black;
+        border: 1px solid black;
         }
+
         th, td {
-            padding: 8px;
-            text-align: left;
+        padding: 8px;
+        text-align: left;
         }
+
         th {
-            background-color: #f2f2f2;
+        background-color: #f2f2f2;
         }
+
         .action-buttons {
-            margin-bottom: 20px;
+        margin-bottom: 20px;
         }
-        .action-buttons button {
-            margin-right: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
+
+        .action-buttons a {
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
         }
-        .action-buttons button:hover {
-            background-color: #0056b3;
+
+        .action-buttons a:hover {
+        background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <h1>Advisors</h1>
 
-    <div class="action-buttons">
-        <button onclick="location.href='/Advisor/PersonalInfo'">View My Info</button>
-        <button onclick="location.href='/Advisor/MyStudents'">View My Students</button>
-    </div>
+    @* <div class="action-buttons">
+        @foreach (var advisor in Model)
+        {
+            <a asp-action="PersonalInfo" asp-route-id="@advisor.AdvisorID" class="btn btn-primary">View My Info</a>
+            <a asp-action="MyStudents" asp-route-id="@advisor.AdvisorID" class="btn btn-info">View My Students</a>
+        }
+    </div> *@
 
     <table>
         <thead>
@@ -83,12 +92,14 @@
                     <td>@advisor.Title</td>
                     <td>@advisor.Department</td>
                     <td>@advisor.Email</td>
+                    
                 </tr>
             }
         </tbody>
     </table>
 </body>
 </html>
+
 
 @* @model List<CourseSelection.Models.Advisor>
 
