@@ -16,29 +16,30 @@ namespace CourseSelection.Controllers.webcontroller
 
         public IActionResult Index(int id)
         {
-            var advisors = _context.Advisors.ToList(); // Veritabanından danışmanları çekmek
-            return View(advisors); // View'e gönderme
-            
-        }
-
-        public IActionResult Details(int id)
-        {
             var advisor = _context.Advisors.FirstOrDefault(a => a.AdvisorID == id);
             if (advisor == null)
             {
                 return NotFound();
             }
             return View(advisor);
+
+        }
+
+        public IActionResult Details(int id)
+        {
+            var advisors = _context.Advisors.ToList();
+            
+            return View(advisors);
         }
 
         public IActionResult PersonalInfo(int id)
         {
-            var advisor = _context.Advisors.FirstOrDefault(a => a.AdvisorID == id);
-            if (advisor == null)
+            var advisors = _context.Advisors.FirstOrDefault(a => a.AdvisorID == id);
+            if (advisors == null)
             {
                 return NotFound(); // Eğer danışman bulunamazsa 404 döndür
             }
-            return View(advisor);
+            return View(advisors);
         
         }
 

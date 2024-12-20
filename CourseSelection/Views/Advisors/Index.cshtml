@@ -19,7 +19,7 @@
         <p>hello</p>
     </tbody>
 </table> *@
-@model List<CourseSelection.Models.Advisor>
+@model CourseSelection.Models.Advisor
 
 <!DOCTYPE html>
 <html>
@@ -63,40 +63,17 @@
     </style>
 </head>
 <body>
-    <h1>Advisors</h1>
+    <h1>Advisor</h1>
+    
+     <div class="action-buttons">
 
-    @* <div class="action-buttons">
-        @foreach (var advisor in Model)
-        {
-            <a asp-action="PersonalInfo" asp-route-id="@advisor.AdvisorID" class="btn btn-primary">View My Info</a>
-            <a asp-action="MyStudents" asp-route-id="@advisor.AdvisorID" class="btn btn-info">View My Students</a>
-        }
-    </div> *@
+        <a asp-action="Details" asp-route-id="@Model.AdvisorID" class="btn btn-info">View Advisor List</a>
+        <a asp-action="PersonalInfo" asp-route-id="@Model.AdvisorID" class="btn btn-primary">View My Info</a>
+            <a asp-action="MyStudents" asp-route-id="@Model.AdvisorID" class="btn btn-info">View My Students</a>
+        
+    </div> 
 
-    <table>
-        <thead>
-            <tr>
-                <th>Advisor ID</th>
-                <th>Full Name</th>
-                <th>Title</th>
-                <th>Department</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var advisor in Model)
-            {
-                <tr>
-                    <td>@advisor.AdvisorID</td>
-                    <td>@advisor.FullName</td>
-                    <td>@advisor.Title</td>
-                    <td>@advisor.Department</td>
-                    <td>@advisor.Email</td>
-                    
-                </tr>
-            }
-        </tbody>
-    </table>
+    
 </body>
 </html>
 
