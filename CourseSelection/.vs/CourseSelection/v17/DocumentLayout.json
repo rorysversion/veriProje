@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,33 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\LoginUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\LoginUser.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\LoginUser.cshtml",
-              "RelativeToolTip": "Views\\Account\\LoginUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T13:26:57.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeToolTip": "Views\\Account\\ForgotPassword.cshtml",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T13:26:56.711Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T13:37:12.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Student.cs",
@@ -88,12 +79,11 @@
               "RelativeToolTip": "Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:24:55.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T13:24:55.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Advisor.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Advisor.cs",
               "RelativeDocumentMoniker": "Models\\Advisor.cs",
@@ -101,12 +91,11 @@
               "RelativeToolTip": "Models\\Advisor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:23:02.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T13:23:02.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
@@ -114,12 +103,11 @@
               "RelativeToolTip": "Views\\Student\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T13:22:52.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T13:22:52.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Advisors\\Details.cshtml",
@@ -127,8 +115,7 @@
               "RelativeToolTip": "Views\\Advisors\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T13:22:24.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T13:22:24.933Z"
             },
             {
               "$type": "Document",
@@ -138,14 +125,14 @@
               "RelativeDocumentMoniker": "Views\\Advisors\\Index.cshtml",
               "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\Index.cshtml",
               "RelativeToolTip": "Views\\Advisors\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-20T13:22:22.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AdvisorsController.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\webcontroller\\AdvisorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\webcontroller\\AdvisorsController.cs",
@@ -155,6 +142,30 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T13:21:50.576Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T13:26:56.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\LoginUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\LoginUser.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\LoginUser.cshtml",
+              "RelativeToolTip": "Views\\Account\\LoginUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T13:26:57.646Z"
             }
           ]
         }

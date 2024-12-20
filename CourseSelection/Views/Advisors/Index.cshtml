@@ -1,4 +1,4 @@
-﻿@* @model IEnumerable<CourseSelection.Models.Advisor>
+﻿@* @model IEnumerable<CourseSelection.Models.Advisor> burayi denemek icin olusturdum sadece hello yaziyor
 
 @{
     ViewData["Title"] = "Öğrenci Listesi";
@@ -20,6 +20,77 @@
     </tbody>
 </table> *@
 @model List<CourseSelection.Models.Advisor>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advisors</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .action-buttons {
+            margin-bottom: 20px;
+        }
+        .action-buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .action-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advisors</h1>
+
+    <div class="action-buttons">
+        <button onclick="location.href='/Advisor/PersonalInfo'">View My Info</button>
+        <button onclick="location.href='/Advisor/MyStudents'">View My Students</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Advisor ID</th>
+                <th>Full Name</th>
+                <th>Title</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var advisor in Model)
+            {
+                <tr>
+                    <td>@advisor.AdvisorID</td>
+                    <td>@advisor.FullName</td>
+                    <td>@advisor.Title</td>
+                    <td>@advisor.Department</td>
+                    <td>@advisor.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+
+@* @model List<CourseSelection.Models.Advisor>
 
 <!DOCTYPE html>
 <html>
@@ -53,5 +124,5 @@
         </tbody>
     </table>
 </body>
-</html>
+</html> *@
 
