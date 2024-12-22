@@ -4,9 +4,9 @@ namespace CourseSelection.Models
 {
     public class StudentCourseSelection
     {
-        public int SelectionID { get; set; } // Primary Key
+        public int? SelectionID { get; set; } // Primary Key
         public int StudentID { get; set; }
-        public int CourseID { get; set; }
+        public int? CourseID { get; set; }
         public DateTime SelectionDate { get; set; }
         public bool IsApproved { get; set; }
 

@@ -51,27 +51,27 @@ namespace CourseSelection.Controllers
             return View(student);
         }
 
-        [HttpGet("CourseSelection")]
-        public async Task<IActionResult> CourseSelection(int id)
-        {
-            // Öğrenci, ders seçimleri ve danışmanı al
-            var student = await _context.Students
-                                         .Include(s => s.StudentCourseSelections)
-                                             .ThenInclude(sc => sc.Course)
-                                         .Include(s => s.Advisor) // Advisor bilgisi dahil edildi
-                                         .FirstOrDefaultAsync(s => s.StudentID == id);
+        //[HttpGet("CourseSelection")]
+        //public async Task<IActionResult> CourseSelection(int id)
+        //{
+        //    // Öğrenci, ders seçimleri ve danışmanı al
+        //    var student = await _context.Students
+        //                                 .Include(s => s.StudentCourseSelections)
+        //                                     .ThenInclude(sc => sc.Course)
+        //                                 .Include(s => s.Advisor) // Advisor bilgisi dahil edildi
+        //                                 .FirstOrDefaultAsync(s => s.StudentID == id);
 
 
-            // Eğer öğrenci bulunamazsa hata mesajı gönderin
-            if (student == null)
-            {
-                ViewBag.Message = "Student not found.";
-                return View(); // Boş bir View döner
-            }
+        //    // Eğer öğrenci bulunamazsa hata mesajı gönderin
+        //    if (student == null)
+        //    {
+        //        ViewBag.Message = "Student not found.";
+        //        return View(); // Boş bir View döner
+        //    }
 
-            // Öğrenci modelini View'a gönderin
-            return View(student); // Student modelini gönderiyoruz
-        }
+        //    // Öğrenci modelini View'a gönderin
+        //    return View(student); // Student modelini gönderiyoruz
+        //}
         [HttpPost]
         public async Task<IActionResult> SubmitCourseSelection(int id, List<int> SelectedCourseIds)
         {
@@ -116,6 +116,42 @@ namespace CourseSelection.Controllers
             return RedirectToAction("CourseSelection", new { id });
         }
 
+
+        //------------------------
+        public IActionResult CourseSelection(int id)
+        {
+            var courses = _context.Courses.ToList();
+            ViewBag.StudentID = id;
+            return View(courses); // Student/CourseSelection.cshtml
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CourseSelection(int studentId, List<int> selectedCourses)
+        {
+            foreach (var courseId in selectedCourses)
+            {
+                var existingSelection = _context.StudentCourseSelections
+                    .FirstOrDefault(s => s.StudentID == studentId && s.CourseID == courseId);
+
+                if (existingSelection == null) // Aynı ders iki kere eklenmesin
+                {
+                    var selection = new StudentCourseSelection
+                    {
+                        StudentID = studentId,
+                        CourseID = courseId,
+                        SelectionDate = DateTime.Now,
+                        IsApproved = false
+                    };
+
+                    _context.StudentCourseSelections.Add(selection);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Details", new { id = studentId });
+        }
+
+
         // Kurs seçimi formunu gösteren GET aksiyonu
         //[HttpPost]
         //public IActionResult SelectCourse(int courseId, string studentId)
@@ -145,6 +181,7 @@ namespace CourseSelection.Controllers
 
         public IActionResult SelectCourse(int studentId)
         {
+
             var student = _context.Courses?.ToList() ?? new List<Course>();
             //if (student == null)
             //{
@@ -156,6 +193,22 @@ namespace CourseSelection.Controllers
 
             return View(student);
         }
+        //public IActionResult SelectCourse(int studentId)
+        //{
+
+        //    var student = _context.Students.Include(s => s.Course).FirstOrDefault(s => s.StudentID == studentId);
+        //    if (student == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var courses = student.Course.ToList();
+
+        //    // Tüm kursları listele
+        //    //var student = _context.Courses?.ToList() ?? new List<Course>();
+
+        //    return View(courses);
+        //}
 
         // Kurs seçimini kaydeden POST aksiyonu
         [HttpPost]

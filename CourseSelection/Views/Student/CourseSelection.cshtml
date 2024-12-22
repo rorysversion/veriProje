@@ -1,4 +1,42 @@
-﻿@* @model CourseSelection.Models.Student
+﻿@model List<CourseSelection.Models.Course>
+
+<h2>Select Courses</h2>
+
+<form method="post" asp-action="CourseSelection">
+    <input type="hidden" name="studentId" value="@ViewBag.StudentID" />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="selectedCourses" value="@course.CourseID" />
+                    </td>
+                    <td>@course.CourseCode</td>
+                    <td>@course.CourseName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+@* @model CourseSelection.Models.Student
 
 @{
     ViewData["Title"] = "Course Selection";
@@ -61,7 +99,8 @@
 
 <div class="container content-container">
     <div class="student-info"> *@
-@model List<CourseSelection.Models.StudentCourseSelection>
+       @*DEFAULT*@
+@* @model CourseSelection.Models.Student
 
 <h2>Course Selection</h2>
 
@@ -72,7 +111,9 @@
     </div>
 }
 
-<form method="post" asp-action="SubmitCourseSelection" asp-controller="Student">
+<form method="post" asp-action="CourseSelection" asp-controller="Student">
+
+
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -83,18 +124,35 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var course in Model) // Model.Courses burada mevcut derslerin listesi
+            @* @if (Model == null || !Model.Any())
             {
-                <tr>
-                    <td>@course.Course</td>
-                    <td>@course.CourseID</td>
-                    @* <td>@(course.IsMandatory ? "Mandatory" : "Elective")</td>
-                    <td>@course.Credit</td> *@
-                    <td>
-                        <input type="checkbox" name="SelectedCourseIds" value="@course.CourseID" />
-                    </td>
-                </tr>
+                <tr><td colspan="4">No courses available.</td></tr>
             }
+            else
+            { *@
+               @*  @foreach (var course in Model)
+                {
+                    <tr>
+                        <td>@course.CourseID</td>  <!-- Course Name -->
+                        <td>@(course.IsApproved ? "Mandatory" : "Elective")</td>
+                        <td>@course.Course</td>
+                        <td>
+                            <input type="checkbox" name="SelectedCourseIds[]" value="@course.CourseID" />
+                        </td>
+                    </tr>
+                } *@@*
+                     @foreach (var course in Model.StudentCourseSelections)
+                        {
+                            <tr>
+                                <td>@course.CourseID</td>  <!-- Course Name -->
+                                <td>@(course.IsApproved ? "Mandatory" : "Elective")</td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" name="SelectedCourseIds[]" value="@course.CourseID" />
+                                </td>
+                            </tr>
+                        }
+            
         </tbody>
     </table>
 
@@ -102,6 +160,7 @@
         <input type="submit" value="Submit Selection" class="btn btn-primary" />
     </div>
 </form>
+ *@
 
 @* <form method="post" asp-action="SubmitCourseSelection" asp-controller="Students">
     <table>

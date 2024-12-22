@@ -10,11 +10,11 @@ namespace CourseSelection.Models
         public string Email { get; set; }
         public int? AdvisorID { get; set; }
         public DateTime EnrollmentDate { get; set; }
-        
 
+        //public  Advisor { get; set; }
         // Navigation Properties
         public Advisor Advisor { get; set; } // Danışman bilgisi için eklendi
-
+       
         // Navigation Properties
         public ICollection<StudentCourseSelection> StudentCourseSelections { get; set; } = new List<StudentCourseSelection>();
     }

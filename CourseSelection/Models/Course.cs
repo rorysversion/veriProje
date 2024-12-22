@@ -1,4 +1,5 @@
-﻿namespace   CourseSelection.Models
+﻿using CourseSelection.Models;
+namespace   CourseSelection.Models
 {
     public class Course
     {
@@ -9,9 +10,9 @@
         public int Credit { get; set; }
         //public string Department { get; set; }
 
-       // public int? Quota { get; set; } // NULL olabilir çünkü zorunlu derslerde kullanılmayacak
-
-
+        // public int? Quota { get; set; } // NULL olabilir çünkü zorunlu derslerde kullanılmayacak
+        
+        
         // Navigation Properties
         public ICollection<StudentCourseSelection> StudentCourseSelections { get; set; } = new List<StudentCourseSelection>();
     }

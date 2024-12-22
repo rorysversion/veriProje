@@ -31,7 +31,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Course Name</th>
+                    <th>CourseID</th>
                     <th>Credit</th>
                     <th>Mandatory</th>
                     <th>Selection Date</th>
@@ -41,7 +41,7 @@
                 @foreach (var courseSelection in Model.StudentCourseSelections)
                 {
                     <tr>
-                        <td>@courseSelection.Course.CourseName</td>
+                        <td>@courseSelection.Course.CourseID</td>
                         <td>@courseSelection.Course.Credit</td>
                         <td>@(courseSelection.Course.IsMandatory ? "Yes" : "No")</td>
                         <td>@courseSelection.SelectionDate.ToString("d")</td>
