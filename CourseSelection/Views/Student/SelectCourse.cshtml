@@ -50,7 +50,9 @@
 {
     <div class="alert alert-success">@TempData["Message"]</div>
 }
-
+<p>
+    <a asp-action="CourseSelection"  class="btn btn-info btn-sm">seçim yap</a>
+</p>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -59,26 +61,27 @@
             <th>Kredi</th>
             <th>Zorunlu mu?</th>
             
-            <th>İşlem</th>
+            
         </tr>
     </thead>
     <tbody>
         @foreach (var course in Model)
         {
+            
             <tr>
                 <td>@course.CourseName</td>
                 <td>@course.CourseCode</td>
                 <td>@course.Credit</td>
                 <td>@(course.IsMandatory ? "Evet" : "Hayır")</td>
                 
-                <td>
+                
                     @using (Html.BeginForm("SelectCourse", "Student", FormMethod.Post))
                     {
                         @Html.Hidden("courseId", course.CourseID)
                         //<button type="submit" class="btn btn-primary">Seç</button>
-                        <a asp-action="CourseSelection" asp-route-id="@course.CourseID" class="btn btn-info btn-sm">secim yap</a>
+                       
                     }
-                </td>
+                
             </tr>
         }
     </tbody>

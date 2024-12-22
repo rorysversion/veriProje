@@ -31,9 +31,14 @@ namespace CourseSelection
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // Composite key tanımlaması
+          
             modelBuilder.Entity<StudentCourseSelection>()
+                .Property(s => s.SelectionID)
+                .ValueGeneratedOnAdd(); // Otomatik artış
+        
+
+        // Composite key tanımlaması
+        modelBuilder.Entity<StudentCourseSelection>()
                 .HasKey(scs => new { scs.StudentID, scs.CourseID });
 
             // İlişkiyi tanımlayın

@@ -14,33 +14,14 @@ namespace CourseSelection.Controllers
             _context = context;
         }
 
-        // Öğrenci listesi
+        
         public IActionResult Index(int id)
         {
             var students = _context.Students.Where(p => p.StudentID == id).ToList();
             return View(students);
         }
 
-        // Yeni öğrenci ekleme formu
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Student student)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Students.Add(student);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(student);
-        }
-
-        // Öğrenci detayları
+        
         public IActionResult Details(int id)
         {
             var student = _context.Students.Find(id);
