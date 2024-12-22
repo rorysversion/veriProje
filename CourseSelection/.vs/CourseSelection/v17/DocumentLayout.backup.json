@@ -7,36 +7,64 @@
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\selectcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\selectcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -91,28 +119,8 @@
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:controllers\\webcontroller\\advisorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -121,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\personalinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -143,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\viewstudentcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|c:\\users\\ahsen\\desktop\\veriproje\\veriyeni\\courseselection\\views\\advisors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C7868A5F-4A1D-424B-AA8E-568215C0A0FD}|CourseSelection.csproj|solutionrelative:views\\advisors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -158,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,98 +170,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAEAAABA7zvlVL0fwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:21:19.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Advisor.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Advisor.cs",
+              "RelativeDocumentMoniker": "Models\\Advisor.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Advisor.cs",
+              "RelativeToolTip": "Models\\Advisor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T13:23:02.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\StudentController.cs*",
-              "RelativeToolTip": "Controllers\\StudentController.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAIwJ0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T15:04:40.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:24:55.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourseSelection.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\CourseSelection.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\CourseSelection.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\CourseSelection.cshtml",
-              "RelativeToolTip": "Views\\Student\\CourseSelection.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T16:07:35.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SelectCourse.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\SelectCourse.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\SelectCourse.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\SelectCourse.cshtml*",
-              "RelativeToolTip": "Views\\Student\\SelectCourse.cshtml*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T14:17:21.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Index.cshtml",
-              "RelativeToolTip": "Views\\Student\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T13:22:52.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Details.cshtml",
-              "RelativeToolTip": "Views\\Student\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T14:45:19.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T15:57:47.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -274,7 +222,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "CourseSelection.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\CourseSelection.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\CourseSelection.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\CourseSelection.cshtml",
+              "RelativeToolTip": "Views\\Student\\CourseSelection.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T16:07:35.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T11:04:13.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\SelectCourse.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\SelectCourse.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\SelectCourse.cshtml",
+              "RelativeToolTip": "Views\\Student\\SelectCourse.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T14:17:21.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T13:24:55.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "StudentCourseSelection.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\StudentCourseSelection.cs",
               "RelativeDocumentMoniker": "Models\\StudentCourseSelection.cs",
@@ -287,7 +287,97 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:57:47.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Transcript.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Transcript.cs",
+              "RelativeDocumentMoniker": "Models\\Transcript.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Transcript.cs",
+              "RelativeToolTip": "Models\\Transcript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:18:57.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T13:37:12.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdvisorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\webcontroller\\AdvisorsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\webcontroller\\AdvisorsController.cs",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\webcontroller\\AdvisorsController.cs",
+              "RelativeToolTip": "Controllers\\webcontroller\\AdvisorsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwJsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T13:21:50.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Details.cshtml",
+              "RelativeToolTip": "Views\\Student\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T14:45:19.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApproveCourses.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\ApproveCourses.cshtml",
+              "RelativeDocumentMoniker": "Views\\Advisors\\ApproveCourses.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\ApproveCourses.cshtml",
+              "RelativeToolTip": "Views\\Advisors\\ApproveCourses.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T15:48:35.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T13:22:52.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -295,12 +385,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-22T15:10:55.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T15:10:55.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -308,12 +397,11 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-22T16:02:07.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T16:02:07.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -325,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -337,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -349,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ForgotPassword.cshtml",
@@ -361,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "LoginUser.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Account\\LoginUser.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\LoginUser.cshtml",
@@ -373,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
@@ -385,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -397,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -409,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -421,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -433,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -445,19 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIAwwB8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:37:12.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Advisors\\Index.cshtml",
@@ -469,43 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T11:04:13.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Course.cs",
-              "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAEAAABA7zvlVL0fwA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T15:21:19.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AdvisorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\webcontroller\\AdvisorsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\webcontroller\\AdvisorsController.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Controllers\\webcontroller\\AdvisorsController.cs",
-              "RelativeToolTip": "Controllers\\webcontroller\\AdvisorsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAIAwwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:21:50.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "ForgotPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\ForgotPasswordViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ForgotPasswordViewModel.cs",
@@ -518,30 +558,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "Transcript.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Transcript.cs",
-              "RelativeDocumentMoniker": "Models\\Transcript.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Transcript.cs",
-              "RelativeToolTip": "Models\\Transcript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T15:18:57.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Advisor.cs",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Advisor.cs",
-              "RelativeDocumentMoniker": "Models\\Advisor.cs",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\Advisor.cs",
-              "RelativeToolTip": "Models\\Advisor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:23:02.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -553,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "MyStudents.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\MyStudents.cshtml",
               "RelativeDocumentMoniker": "Views\\Advisors\\MyStudents.cshtml",
@@ -565,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "PersonalInfo.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\PersonalInfo.cshtml",
               "RelativeDocumentMoniker": "Views\\Advisors\\PersonalInfo.cshtml",
@@ -577,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -589,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ViewStudentCourses.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\ViewStudentCourses.cshtml",
               "RelativeDocumentMoniker": "Views\\Advisors\\ViewStudentCourses.cshtml",
@@ -598,18 +614,6 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAYwC4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-20T15:50:45.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ApproveCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\ApproveCourses.cshtml",
-              "RelativeDocumentMoniker": "Views\\Advisors\\ApproveCourses.cshtml",
-              "ToolTip": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\Views\\Advisors\\ApproveCourses.cshtml",
-              "RelativeToolTip": "Views\\Advisors\\ApproveCourses.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T15:48:35.043Z"
             },
             {
               "$type": "Document",

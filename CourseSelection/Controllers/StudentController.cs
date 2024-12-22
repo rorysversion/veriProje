@@ -53,49 +53,85 @@ namespace CourseSelection.Controllers
         //    // Öğrenci modelini View'a gönderin
         //    return View(student); // Student modelini gönderiyoruz
         //}
-        [HttpPost]
-        public async Task<IActionResult> SubmitCourseSelection(int id, List<int> SelectedCourseIds)
-        {
-            // Öğrenciyi veritabanından al
-            var student = await _context.Students
-                                        .Include(s => s.StudentCourseSelections)
-                                        .FirstOrDefaultAsync(s => s.StudentID == id);
+        //[HttpPost]
+        //public async Task<IActionResult> SubmitCourseSelection(int id, List<int> SelectedCourseIds)
+        //{
+        //    // Öğrenciyi veritabanından al
+        //    var student = await _context.Students
+        //                                .Include(s => s.StudentCourseSelections)
+        //                                .FirstOrDefaultAsync(s => s.StudentID == id);
 
-            if (student == null)
-            {
-                TempData["Message"] = "Student not found.";
-                return RedirectToAction("CourseSelection", new { id });
-            }
+        //    if (student == null)
+        //    {
+        //        TempData["Message"] = "Student not found.";
+        //        return RedirectToAction("CourseSelection", new { id });
+        //    }
 
-            // Seçilen dersleri al ve öğrenciye ekle
-            if (SelectedCourseIds != null && SelectedCourseIds.Any())
-            {
-                foreach (var courseId in SelectedCourseIds)
-                {
-                    // Seçilen ders veritabanında var mı kontrol et
-                    var course = await _context.Courses.FindAsync(courseId);
-                    if (course != null)
-                    {
-                        var selection = new StudentCourseSelection
-                        {
-                            StudentID = student.StudentID,
-                            CourseID = course.CourseID
-                        };
+        //    // Seçilen dersleri al ve öğrenciye ekle
+        //    if (SelectedCourseIds != null && SelectedCourseIds.Any())
+        //    {
+        //        foreach (var courseId in SelectedCourseIds)
+        //        {
+        //            // Seçilen ders veritabanında var mı kontrol et
+        //            var course = await _context.Courses.FindAsync(courseId);
+        //            if (course != null)
+        //            {
+        //                var selection = new StudentCourseSelection
+        //                {
+        //                    StudentID = student.StudentID,
+        //                    CourseID = course.CourseID
+        //                };
 
-                        _context.StudentCourseSelections.Add(selection);
-                    }
-                }
+        //                _context.StudentCourseSelections.Add(selection);
+        //            }
+        //        }
 
-                await _context.SaveChangesAsync();
-                TempData["Message"] = "Courses selected successfully!";
-            }
-            else
-            {
-                TempData["Message"] = "No courses selected.";
-            }
+        //        await _context.SaveChangesAsync();
+        //        TempData["Message"] = "Courses selected successfully!";
+        //    }
+        //    else
+        //    {
+        //        TempData["Message"] = "No courses selected.";
+        //    }
 
-            return RedirectToAction("CourseSelection", new { id });
-        }
+        //    return RedirectToAction("CourseSelection", new { id });
+        //}
+        //[HttpPost]
+        //public async Task<IActionResult> CourseSelection(int studentId, List<int> selectedCourses)
+        //{
+        //    if (!_context.Students.Any(s => s.StudentID == studentId))
+        //    {
+        //        return NotFound("Student not found.");
+        //    }
+
+        //    if (selectedCourses == null || !selectedCourses.Any())
+        //    {
+        //        ModelState.AddModelError("", "No courses were selected.");
+        //        return View(); // Hata durumunda yeniden sayfa döndürülür.
+        //    }
+
+        //    foreach (var courseId in selectedCourses)
+        //    {
+        //        var existingSelection = _context.StudentCourseSelections
+        //            .FirstOrDefault(s => s.StudentID == studentId && s.CourseID == courseId);
+
+        //        if (existingSelection == null) // Aynı ders iki kere eklenmesin
+        //        {
+        //            var selection = new StudentCourseSelection
+        //            {
+        //                StudentID = studentId,
+        //                CourseID = courseId,
+        //                SelectionDate = DateTime.Now,
+        //                IsApproved = false
+        //            };
+
+        //            _context.StudentCourseSelections.Add(selection);
+        //        }
+        //    }
+
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction("Details", new { id = studentId });
+        //}
 
 
         //------------------------
@@ -132,7 +168,7 @@ namespace CourseSelection.Controllers
             return RedirectToAction("Details", new { id = studentId });
         }
 
-
+        //--------------------------------------------------------------------------
         // Kurs seçimi formunu gösteren GET aksiyonu
         //[HttpPost]
         //public IActionResult SelectCourse(int courseId, string studentId)
@@ -192,52 +228,52 @@ namespace CourseSelection.Controllers
         //}
 
         // Kurs seçimini kaydeden POST aksiyonu
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult SelectCourseConfirmed(int studentId, int courseId)
-        {
-            var student = _context.Students.Find(studentId);
-            var course = _context.Courses.Find(courseId);
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult SelectCourseConfirmed(int studentId, int courseId)
+        //{
+        //    var student = _context.Students.Find(studentId);
+        //    var course = _context.Courses.Find(courseId);
 
-            if (student == null || course == null)
-            {
-                return NotFound();
-            }
+        //    if (student == null || course == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            // Öğrenciye kurs ekle
-            student.StudentCourseSelections = _context.StudentCourseSelections.ToList();
-            _context.SaveChanges();
+        //    // Öğrenciye kurs ekle
+        //    student.StudentCourseSelections = _context.StudentCourseSelections.ToList();
+        //    _context.SaveChanges();
 
-            return RedirectToAction(nameof(Details), new { id = studentId });
-        }
-        [HttpPost]
-        public IActionResult Select_Course(int courseId,int id)
-        {
-            // Öğrencinin kimliğini alın (kullanıcı oturumundan)
-            //var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;  // Örnek olarak, kullanıcı ID'si claim'den alınır.
-            var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        //    return RedirectToAction(nameof(Details), new { id = studentId });
+        //}
+        //[HttpPost]
+        //public IActionResult Select_Course(int courseId,int id)
+        //{
+        //    // Öğrencinin kimliğini alın (kullanıcı oturumundan)
+        //    //var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;  // Örnek olarak, kullanıcı ID'si claim'den alınır.
+        //    var studentId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
             
 
-            var student = _context.Students.FirstOrDefault(s => s.StudentID == id);
+        //    var student = _context.Students.FirstOrDefault(s => s.StudentID == id);
             
-            if (student != null)
-            {
-                // Seçilen kursu öğrenciye ekle
-                var courseSelection = new StudentCourseSelection
-                {
-                    StudentID = student.StudentID,
-                    CourseID = courseId,
-                    //IsSelected = true
-                };
+        //    if (student != null)
+        //    {
+        //        // Seçilen kursu öğrenciye ekle
+        //        var courseSelection = new StudentCourseSelection
+        //        {
+        //            StudentID = student.StudentID,
+        //            CourseID = courseId,
+        //            //IsSelected = true
+        //        };
 
-                _context.StudentCourseSelections.Add(courseSelection);
-                _context.SaveChanges();
+        //        _context.StudentCourseSelections.Add(courseSelection);
+        //        _context.SaveChanges();
 
-                TempData["Message"] = "Kurs başarıyla seçildi!";
-            }
+        //        TempData["Message"] = "Kurs başarıyla seçildi!";
+        //    }
 
-            return RedirectToAction("Index"); // Kurs listesine geri dön
-        }
+        //    return RedirectToAction("Index"); // Kurs listesine geri dön
+        //}
 
         // Öğrenci silme
 

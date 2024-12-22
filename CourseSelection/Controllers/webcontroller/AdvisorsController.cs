@@ -159,27 +159,7 @@ namespace CourseSelection.Controllers.webcontroller
     //}
 
 
-    //public IActionResult Index(int id)
-    //{
-    //    var advisor = _context.Advisors.ToList();
-    //    return View(advisor);
-    //    //var advisor = _context.Advisors.Find(id);
-    //    //if (advisor == null)
-    //    //{
-    //    //    return NotFound();
-    //    //}
-    //    //return View(new List<Advisor> { advisor });
-    //}
-    //var advisor = _context.Advisors.Where(p => p.AdvisorID == id).ToList();
-    //return View(advisor);
 
-
-    //public IActionResult Details(int id)
-    //{
-    //    var advisor = _context.Advisors.Where(p => p.AdvisorID == id).ToList();
-
-    //    return View(advisor);
-    //}
 
 
 }
