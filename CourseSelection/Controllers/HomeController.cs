@@ -11,32 +11,13 @@ namespace CourseSelection.Controllers
         {
             return View();
         }
-
-        // Login Ýþlemi için POST Metodu
-        [HttpPost]
-        public ActionResult Login(LoginViewModel model, string role)
+        
+        public IActionResult Index()
         {
-            if (ModelState.IsValid)
-            {
-                if (role == "Student")
-                {
-                    // ÖÐRENCÝ GÝRÝÞÝ
-                    if (model.Username == "ahmet.yilmaz" && model.PasswordHash == "hashedpassword12")
-                    {
-                        return RedirectToAction("Details", "Student");
-                    }
-                }
-                else if (role == "Teacher")
-                {
-                    // ÖÐRETMEN GÝRÝÞÝ
-                    if (model.Username == "teacher" && model.PasswordHash == "1234")
-                    {
-                        return RedirectToAction("TeacherDashboard", "Teacher");
-                    }
-                }
-                ModelState.AddModelError("", "Kullanýcý adý veya þifre hatalý!");
-            }
-            return View(model);
+            return View();
         }
+        
+
+        
     }
 }
