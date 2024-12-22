@@ -34,7 +34,7 @@ namespace CourseSelection.Controllers
         {
             var courses = _context.Courses.ToList();
             ViewBag.StudentID = id;
-            return View(courses); // Student/CourseSelection.cshtml
+            return View(courses); 
         }
 
         [HttpPost]
@@ -45,7 +45,7 @@ namespace CourseSelection.Controllers
                 var existingSelection = _context.StudentCourseSelections
                     .FirstOrDefault(s => s.StudentID == studentId && s.CourseID == courseId);
 
-                if (existingSelection == null) // Aynı ders iki kere eklenmesin
+                if (existingSelection == null) 
                 {
                     var selection = new StudentCourseSelection
                     {
