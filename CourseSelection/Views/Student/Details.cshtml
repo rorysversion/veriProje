@@ -5,7 +5,7 @@
 }
 
 <h1>Öğrenci Detayları</h1>
-<a asp-action="SelectCourse" asp-route-studentId="@Model.StudentID" class="btn btn-info">Kurs Seç</a>
+
 
 <div>
     <h4>@Model.FirstName @Model.LastName</h4>
@@ -15,5 +15,6 @@
 </div>
 
 <p>
-    <a asp-action="Index" asp-route-id="@Model.StudentID" class="btn btn-secondary">Listeye Dön</a>
+    <a asp-action="SelectCourse" asp-route-studentId="@Model.StudentID" class="btn btn-info">Kurs Seç</a>
+    <a asp-action="SelectCourse" asp-route-id="@Model.StudentID" class="btn btn-secondary">Listeye Dön</a>
 </p>

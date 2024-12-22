@@ -1,28 +1,121 @@
 ﻿@model List<CourseSelection.Models.Student>
 
-<h1>My Students</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Student ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Enrollment Date</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var student in Model)
-        {
-            <tr>
-                <td>@student.StudentID</td>
-                <td>@student.FirstName</td>
-                <td>@student.LastName</td>
-                <td>@student.Email</td>
-                <td>@student.EnrollmentDate.ToString("yyyy-MM-dd")</td>
-            </tr>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Students</title>
+    <style>
+        /* Genel sayfa stili */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Açık gri arka plan */
+            color: #333;
+            margin: 0;
+            padding: 20px;
         }
-    </tbody>
-</table>
+
+        h1 {
+            text-align: center;
+            color: #5d2f6e; /* Başlık için koyu mor */
+            margin-bottom: 20px;
+        }
+
+        /* Tablo stil */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Tablo için hafif gölge */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #7f4f96; /* Başlıklar için mor */
+            color: #fff;
+        }
+
+        td {
+            background-color: #f9f9f9; /* Hücrelerin açık gri rengi */
+            border-bottom: 1px solid #e0e0e0; /* Hücreler arası ince sınır */
+        }
+
+        tr:hover td {
+            background-color: #f2f2f2; /* Satır üzerine gelindiğinde arka plan değişir */
+        }
+
+        /* Tablo başlığına ve hücrelere genel stil */
+        td, th {
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Sayfa genelinde butonlar ve bağlantılar */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+            .action-buttons a {
+                padding: 12px 25px;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                font-size: 16px;
+                transition: transform 0.3s, background-color 0.3s;
+            }
+
+        .btn-info {
+            background-color: #5d2f6e; /* Koyu mor */
+        }
+
+            .btn-info:hover {
+                background-color: #7f4f96; /* Koyu mor hover efekti */
+            }
+
+    </style>
+</head>
+<body>
+
+    <h1>My Students</h1>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Enrollment Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.StudentID</td>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.Email</td>
+                    <td>@student.EnrollmentDate.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+</body>
+</html>
+
 
 

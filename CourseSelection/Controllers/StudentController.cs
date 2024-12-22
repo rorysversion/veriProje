@@ -59,7 +59,7 @@ namespace CourseSelection.Controllers
                 }
             }
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();//studentID hatası
             return RedirectToAction("Details", new { id = studentId });
         }
         

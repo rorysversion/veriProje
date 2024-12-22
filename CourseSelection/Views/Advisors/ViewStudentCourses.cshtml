@@ -4,50 +4,132 @@
     ViewData["Title"] = "Student Courses";
 }
 
-<style>
-    .content-container {
-        max-width: 75%;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Sayfa genel stili */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Açık gri arka plan */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
 
-<div class="container">
-    <h2>Student Courses</h2>
-    <h4>Student Information</h4>
-    <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
-    <p><strong>Student ID:</strong> @Model.StudentID</p>
-    
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+        }
 
-    <hr />
+        h2, h4 {
+            color: #5d2f6e; /* Başlık için koyu mor */
+            text-align: center;
+        }
 
-    @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
-    {
-        <div class="alert alert-warning">
-            No courses have been selected by this student.
+        .alert {
+            padding: 10px 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #7f4f96; /* Tablo başlıkları için mor */
+            color: #fff;
+        }
+
+        td {
+            background-color: #f9f9f9; /* Hücreler için açık gri */
+            border-bottom: 1px solid #ddd; /* Hücreler arasındaki ince sınır */
+        }
+
+        tr:hover td {
+            background-color: #f2f2f2; /* Hover efekti ile satır arka planı değişir */
+        }
+
+        .content-container {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        .student-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+            .student-info strong {
+                color: #5d2f6e; /* Bilgi başlıkları için koyu mor */
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Courses</h2>
+
+        
+        <div class="student-info">
+            <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
+            <p><strong>Student ID:</strong> @Model.StudentID</p>
         </div>
-    }
-    else
-    {
-        <h4>Selected Courses</h4>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>CourseID</th>
-                    <th>Credit</th>
-                    <th>Mandatory</th>
-                    <th>Selection Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var courseSelection in Model.StudentCourseSelections)
-                {
+
+        <hr />
+
+        @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
+        {
+            <div class="alert">
+                No courses have been selected by this student.
+            </div>
+        }
+        else
+        {
+            <h4>Selected Courses</h4>
+            <table class="table table-bordered">
+                <thead>
                     <tr>
-                        <td>@courseSelection.Course.CourseID</td>
-                        <td>@courseSelection.Course.Credit</td>
-                        <td>@(courseSelection.Course.IsMandatory ? "Yes" : "No")</td>
-                        <td>@courseSelection.SelectionDate.ToString("d")</td>
+                        <th>CourseID</th>
+                        <th>Credit</th>
+                        <th>Mandatory</th>
+                        <th>Selection Date</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    }
-</div>
+                </thead>
+                <tbody>
+                    @foreach (var courseSelection in Model.StudentCourseSelections)
+                    {
+                        <tr>
+                            <td>@courseSelection.Course.CourseID</td>
+                            <td>@courseSelection.Course.Credit</td>
+                            <td>@(courseSelection.Course.IsMandatory ? "Yes" : "No")</td>
+                            <td>@courseSelection.SelectionDate.ToString("d")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+</body>
+</html>

@@ -26,55 +26,98 @@
 <head>
     <title>Advisors</title>
     <style>
-        table {
-        width: 100%;
-        border-collapse: collapse;
+        /* Genel sayfa ve tablo stili */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2; /* Pastel pembe arka plan */
+            color: #333;
+            margin: 0;
+            padding: 20px;
         }
 
-        table, th, td {
-        border: 1px solid black;
+        h1 {
+            color: #5d2f6e;
+            text-align: center; /* Başlık ortalanmış */
         }
 
-        th, td {
-        padding: 8px;
-        text-align: left;
-        }
-
-        th {
-        background-color: #f2f2f2;
-        }
-
+        /* Butonlar için ortak stil */
         .action-buttons {
-        margin-bottom: 20px;
+            display: flex;
+            justify-content: center; /* Butonları yatayda ortalama */
+            gap: 15px;
+            margin-top: 30px;
         }
 
-        .action-buttons a {
-        margin-right: 10px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
+            .action-buttons a {
+                padding: 12px 25px;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                border: 1px solid #f1c6d3; /* Pastel pembe kenarlık */
+                font-size: 16px;
+                text-align: center;
+                transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+            }
+
+                .action-buttons a:hover {
+                    transform: scale(1.05); /* Hoverda buton büyür */
+                    opacity: 0.9;
+                }
+
+        /* Butonlar için pastel pembe tonları */
+        .btn-info {
+            background-color: #f48fb1; /* Pastel pembe */
         }
 
-        .action-buttons a:hover {
-        background-color: #0056b3;
+            .btn-info:hover {
+                background-color: #f06292; /* Koyu pembe hover efekti */
+            }
+
+        .btn-primary {
+            background-color: #f1a7c1; /* Hafif pembe */
         }
+
+            .btn-primary:hover {
+                background-color: #f8bbd0; /* Koyu pembe hover efekti */
+            }
+
+        .btn-success {
+            background-color: #f8c9d6; /* Soluk pembe */
+        }
+
+            .btn-success:hover {
+                background-color: #f06292; /* Koyu pembe hover efekti */
+            }
+
+        .btn-warning {
+            background-color: #fddde1; /* Açık pembe */
+        }
+
+            .btn-warning:hover {
+                background-color: #f06292; /* Koyu pembe hover efekti */
+            }
+
+        .btn-danger {
+            background-color: #f7a6b5; /* Daha yoğun pembe */
+        }
+
+            .btn-danger:hover {
+                background-color: #f06292; /* Koyu pembe hover efekti */
+            }
+
     </style>
 </head>
 <body>
-    <h1>Advisor</h1>
-    
-     <div class="action-buttons">
 
+    <h1>Advisor Dashboard</h1>
+
+    <div class="action-buttons">
         <a asp-action="Details" asp-route-id="@Model.AdvisorID" class="btn btn-info">View Advisor List</a>
         <a asp-action="PersonalInfo" asp-route-id="@Model.AdvisorID" class="btn btn-primary">View My Info</a>
-            <a asp-action="MyStudents" asp-route-id="@Model.AdvisorID" class="btn btn-info">View My Students</a>
-       
-        <a asp-action="ApproveCourses" asp-route-id="@Model.AdvisorID" class="btn btn-info">Approve Courses</a>
-    </div> 
+        <a asp-action="MyStudents" asp-route-id="@Model.AdvisorID" class="btn btn-success">View My Students</a>
+        <a asp-action="ApproveCourses" asp-route-id="@Model.AdvisorID" class="btn btn-danger">Approve Courses</a>
+    </div>
 
-    
 </body>
 </html>
 
