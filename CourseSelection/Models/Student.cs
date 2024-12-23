@@ -11,12 +11,10 @@ namespace CourseSelection.Models
         public int? AdvisorID { get; set; }
         public DateTime EnrollmentDate { get; set; }
 
-        //public  Advisor { get; set; }
-        // Navigation Properties
-        public Advisor Advisor { get; set; } // Danışman bilgisi için eklendi
+        
+        public Advisor Advisor { get; set; } 
        
         // Navigation Properties
         public ICollection<StudentCourseSelection> StudentCourseSelections { get; set; } = new List<StudentCourseSelection>();
     }
 }
-//Data Source=AHSEN\SQLEXPRESS;Initial Catalog=UniversityCourseSelection;Integrated Security=True;Trust Server Certificate=True

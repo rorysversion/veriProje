@@ -6,7 +6,7 @@ namespace CourseSelection.Controllers
 {
     public class HomeController : Controller
     {
-        // Login Ekranýný Gösteren Action
+        
         public ActionResult Login()
         {
             return View();

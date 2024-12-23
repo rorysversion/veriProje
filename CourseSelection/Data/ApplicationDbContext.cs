@@ -37,11 +37,11 @@ namespace CourseSelection
                 .ValueGeneratedOnAdd(); // Otomatik artış
         
 
-        // Composite key tanımlaması
+        
         modelBuilder.Entity<StudentCourseSelection>()
                 .HasKey(scs => new { scs.StudentID, scs.CourseID });
 
-            // İlişkiyi tanımlayın
+            
             modelBuilder.Entity<StudentCourseSelection>()
                 .HasOne(scs => scs.Student)
                 .WithMany(s => s.StudentCourseSelections)
@@ -51,7 +51,7 @@ namespace CourseSelection
                 .HasOne(scs => scs.Course)
                 .WithMany(c => c.StudentCourseSelections)
                 .HasForeignKey(scs => scs.CourseID);
-            //---------------------------------------------------------------
+            
             modelBuilder.Entity<LoginViewModel>(entity =>
             {
                 entity.HasKey(e => e.Username).HasName("PK_Login");

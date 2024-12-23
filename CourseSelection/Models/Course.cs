@@ -8,9 +8,7 @@ namespace   CourseSelection.Models
         public string CourseName { get; set; }
         public bool IsMandatory { get; set; }
         public int Credit { get; set; }
-        //public string Department { get; set; }
-
-        // public int? Quota { get; set; } // NULL olabilir çünkü zorunlu derslerde kullanılmayacak
+        
         
         
         // Navigation Properties

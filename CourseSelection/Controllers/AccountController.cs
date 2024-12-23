@@ -73,8 +73,7 @@ namespace CourseSelection.Controllers
                     // Örnek: Kullanıcıya şifre sıfırlama bağlantısı gönderme
                     string resetLink = Url.Action("ResetPassword", "Account", new { email = model.Email }, Request.Scheme);
 
-                    // Şifre sıfırlama bağlantısını e-posta ile gönder
-                    // (Burada e-posta göndermek için bir hizmet kullanılabilir)
+                    
 
                     ViewBag.Message = "A password reset link has been sent to your email.";
                 }

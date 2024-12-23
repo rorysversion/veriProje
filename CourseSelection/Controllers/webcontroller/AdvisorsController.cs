@@ -54,14 +54,14 @@ namespace CourseSelection.Controllers.webcontroller
             {
                 return NotFound();
             }
-            return View(students); // Öğrencilerin listesi gönderiliyor
+            return View(students); 
 
         }
 
         [HttpGet("ViewStudentCourses/{studentId}")]
         public IActionResult ViewStudentCourses(int studentId)
         {
-            // Öğrenciyi ve seçtiği dersleri çekiyoruz
+            
             var student = _context.Students
                 .Include(s => s.StudentCourseSelections)
                     .ThenInclude(sc => sc.Course)
@@ -88,78 +88,8 @@ namespace CourseSelection.Controllers.webcontroller
             }
             return View(advisor);
         }
-        //// Advisor ID'ye göre danışman ve öğrencileri alınıyor
-        //var students = _context.Advisors
-        //    .Where(a => a.AdvisorID == id)
-        //    .Select(a => new
-        //    {
-        //        a.Students
-        //    })
-        //    .FirstOrDefault();
-
-        //if (advisors == null || advisors.Students == null)
-        //{
-        //    return NotFound(); // Eğer danışman ya da öğrencileri bulunamazsa 404 döndür
-        //}
-
-        //return View(advisors.Students); // Öğrencileri View'e gönder
+       
     }
-
-
-    //[HttpGet("ApproveCourses")]
-    //public IActionResult ApproveCourses(int id)
-    //{
-    //    // Danışman tarafından onaylanacak dersler burada işlenir.
-    //    var advisor = _context.Advisors
-    //        .Include(a => a.Students)
-    //        .FirstOrDefault(a => a.AdvisorID == id);
-
-    //    if (advisor == null)
-    //    {
-    //        return NotFound(new { Message = "Advisor not found." });
-    //    }
-    //    return View(advisor);
-    //}
-
-    //[HttpGet("ViewStudentCourses/{studentId}")]
-    //public IActionResult ViewStudentCourses(int studentId)
-    //{
-    //    // Öğrenciyi ve seçtiği dersleri çekiyoruz
-    //    var student = _context.Students
-    //        .Include(s => s.StudentCourseSelections)
-    //            .ThenInclude(sc => sc.Course)
-    //        .FirstOrDefault(s => s.StudentID == studentId);
-
-    //    if (student == null)
-    //    {
-    //        return NotFound(new { Message = "Student not found." });
-    //    }
-
-    //    return View(student);
-    //}
-
-    //[HttpGet("getAdvisorList")]
-    //public async Task<ActionResult<IEnumerable<Advisor>>> GetAdvisors()
-    //{
-    //    return await _context.Advisors.ToListAsync();
-    //}
-
-    //// GET: api/AdvisorController/getById?id=5
-    //[HttpGet("getById")]
-    //public async Task<ActionResult<Advisor>> GetAdvisor(int id)
-    //{
-    //    var advisor = await _context.Advisors.FindAsync(id);
-
-    //    if (advisor == null)
-    //    {
-    //        return NotFound(new { Message = "Advisor not found." });
-    //    }
-
-    //    return advisor;
-    //}
-
-
-
 
 
 }

@@ -1,25 +1,4 @@
-﻿@* @model IEnumerable<CourseSelection.Models.Advisor> burayi denemek icin olusturdum sadece hello yaziyor
-
-@{
-    ViewData["Title"] = "Öğrenci Listesi";
-}
-
-<h1>Öğrenci Listesi</h1>
-
-<p>
-    <a asp-action="Create" class="btn btn-success">Yeni Öğrenci Ekle</a>
-</p>
-
-<table class="table table-striped">
-    <thead>
-
-    </thead>
-    <tbody>
-
-        <p>hello</p>
-    </tbody>
-</table> *@
-@model CourseSelection.Models.Advisor
+﻿@model CourseSelection.Models.Advisor
 
 <!DOCTYPE html>
 <html>
@@ -121,40 +100,4 @@
 </body>
 </html>
 
-
-@* @model List<CourseSelection.Models.Advisor>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Advisors List</title>
-</head>
-<body>
-    <h1>Advisors</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Advisor ID</th>
-                <th>Full Name</th>
-                <th>Title</th>
-                <th>Department</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var advisor in Model)
-            {
-                <tr>
-                    <td>@advisor.AdvisorID</td>
-                    <td>@advisor.FullName</td>
-                    <td>@advisor.Title</td>
-                    <td>@advisor.Department</td>
-                    <td>@advisor.Email</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</body>
-</html> *@
 
