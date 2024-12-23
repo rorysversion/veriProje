@@ -17,6 +17,7 @@ namespace CourseSelection.Controllers
         }
 
         // GET: Login
+        [HttpGet]
         public IActionResult LoginUser()
         {
             return View();

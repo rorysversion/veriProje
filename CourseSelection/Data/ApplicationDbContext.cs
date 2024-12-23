@@ -1,17 +1,4 @@
-﻿//using Microsoft.EntityFrameworkCore;
-//using CourseSelection.Models;
-//using System.Collections.Generic;
-
-//namespace CourseSelection.Data
-//{
-//    public class ApplicationDbContext : DbContext
-//    {
-//        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-
-//        public DbSet<Advisor> Advisors { get; set; }
-//        public DbSet<Student> Students { get; set; }
-//    }
-//}
+﻿
 using Microsoft.EntityFrameworkCore;
 using CourseSelection.Models;
 

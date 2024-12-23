@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hU4UXuDkMp7N7R5o9OsWnw8weDJ8ELEJJ0IQP01s7YM=",
+  "Hash": "7VHRjPBytJfpGhRkuj4/mnDzQ+ZqCo5ebPTOxhXPvY0=",
   "Source": "CourseSelection",
   "BasePath": "_content/CourseSelection",
   "Mode": "Default",
@@ -1298,12 +1298,12 @@
       "OriginalItemSpec": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-qzpvpyammu.gz",
+      "Identity": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-rsumugukgn.gz",
       "SourceId": "CourseSelection",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CourseSelection",
-      "RelativePath": "css/site#[.{fingerprint=qzpvpyammu}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=rsumugukgn}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gf5eiz7cos",
-      "Integrity": "BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA=",
+      "Fingerprint": "wr6iho51xk",
+      "Integrity": "zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qzpvpyammu",
-      "Integrity": "qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY=",
+      "Fingerprint": "rsumugukgn",
+      "Integrity": "a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -3325,12 +3325,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-qzpvpyammu.gz",
+      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-rsumugukgn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001308900524"
+          "Quality": "0.001964636542"
         }
       ],
       "ResponseHeaders": [
@@ -3340,15 +3340,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "763"
+          "Value": "508"
         },
         {
           "Name": "ETag",
-          "Value": "\"BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA=\""
+          "Value": "\"zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3368,13 +3368,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY=\""
+          "Value": "W/\"a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY="
+          "Value": "sha256-a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4="
         }
       ]
     },
@@ -3389,7 +3389,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2769"
+          "Value": "1121"
         },
         {
           "Name": "Content-Type",
@@ -3397,11 +3397,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY=\""
+          "Value": "\"a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,13 +3411,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY="
+          "Value": "sha256-a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-qzpvpyammu.gz",
+      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-rsumugukgn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3426,7 +3426,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "763"
+          "Value": "508"
         },
         {
           "Name": "Content-Type",
@@ -3434,11 +3434,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA=\""
+          "Value": "\"zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,18 +3456,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA="
+          "Value": "sha256-zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E="
         }
       ]
     },
     {
-      "Route": "css/site.qzpvpyammu.css",
-      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-qzpvpyammu.gz",
+      "Route": "css/site.rsumugukgn.css",
+      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-rsumugukgn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001308900524"
+          "Quality": "0.001964636542"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +3477,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "763"
+          "Value": "508"
         },
         {
           "Name": "ETag",
-          "Value": "\"BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA=\""
+          "Value": "\"zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,13 +3505,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY=\""
+          "Value": "W/\"a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qzpvpyammu"
+          "Value": "rsumugukgn"
         },
         {
           "Name": "label",
@@ -3519,12 +3519,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY="
+          "Value": "sha256-a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4="
         }
       ]
     },
     {
-      "Route": "css/site.qzpvpyammu.css",
+      "Route": "css/site.rsumugukgn.css",
       "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3534,7 +3534,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2769"
+          "Value": "1121"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +3542,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY=\""
+          "Value": "\"a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3556,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qzpvpyammu"
+          "Value": "rsumugukgn"
         },
         {
           "Name": "label",
@@ -3564,13 +3564,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qskgRPqwg9XkVcefVPmnQiUhl0hSpFXwYmg5//K9jrY="
+          "Value": "sha256-a0MogMOMmUINmH5WxEmK66xrY+dK4qmI1njWPtfbYE4="
         }
       ]
     },
     {
-      "Route": "css/site.qzpvpyammu.css.gz",
-      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-qzpvpyammu.gz",
+      "Route": "css/site.rsumugukgn.css.gz",
+      "AssetFile": "C:\\Users\\Ahsen\\Desktop\\veriProje\\veriYeni\\CourseSelection\\obj\\Debug\\net9.0\\compressed\\xx9buf8res-rsumugukgn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +3579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "763"
+          "Value": "508"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA=\""
+          "Value": "\"zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 15:41:34 GMT"
+          "Value": "Mon, 23 Dec 2024 17:13:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3609,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qzpvpyammu"
+          "Value": "rsumugukgn"
         },
         {
           "Name": "label",
@@ -3617,7 +3617,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BL+3B3qoqPfsr/siJKJMMOaICWFfaNKVO+p7r2UCODA="
+          "Value": "sha256-zJOKmccWBmpNoS81WrCJIppSdIaH/xXp7ZD1gOnDS3E="
         }
       ]
     },

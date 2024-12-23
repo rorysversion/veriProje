@@ -219,4 +219,4 @@ C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\bin\Debug\net9.0\tr\Mi
 C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\obj\Debug\net9.0\compressed\xx9buf8res-qzpvpyammu.gz
+C:\Users\Ahsen\Desktop\veriProje\veriYeni\CourseSelection\obj\Debug\net9.0\compressed\xx9buf8res-rsumugukgn.gz
