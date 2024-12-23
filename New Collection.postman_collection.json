@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "983d600e-dfc8-43b6-84c7-4ee2ca0d8a75",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40143570"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7145/api/StudentsApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7145/api/StudentsApi",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"api",
+						"StudentsApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7145/api/AdvisorsApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7145/api/AdvisorsApi",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"api",
+						"AdvisorsApi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
