@@ -4,38 +4,102 @@
     ViewData["Title"] = "Öğrenci Listesi";
 }
 
-<h1>Öğrenci Listesi</h1>
+<h1 class="text-center text-purple">Öğrenci Listesi</h1>
 
-
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Adı</th>
-            <th>Soyadı</th>
-            <th>Email</th>
-            <th>Danışman ID</th>
-            <th>Kayıt Tarihi</th>
-            <th>İşlemler</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var student in Model)
-        {
-            <tr>
-                <td>@student.StudentID</td>
-                <td>@student.FirstName</td>
-                <td>@student.LastName</td>
-                <td>@student.Email</td>
-                <td>@student.AdvisorID</td>
-                <td>@student.EnrollmentDate.ToShortDateString()</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@student.StudentID" class="btn btn-info btn-sm">Detay</a>
-                    
-                    <a asp-action="SelectCourse" asp-route-id="@student.StudentID" class="btn btn-info btn-sm">Kurslar</a>
-                </td>
+<div class="table-responsive">
+    <table class="table pastel-table">
+        <thead>
+            <tr class="table-header">
+                <th>ID</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Email</th>
+                <th>Danışman ID</th>
+                <th>Kayıt Tarihi</th>
+                <th>İşlemler</th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.StudentID</td>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.Email</td>
+                    <td>@student.AdvisorID</td>
+                    <td>@student.EnrollmentDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@student.StudentID" class="btn btn-purple btn-sm">Detay</a>
+                        <a asp-action="SelectCourse" asp-route-id="@student.StudentID" class="btn btn-pink btn-sm">Kurslar</a>
+                    </td>
+                </tr>
+            }
+            
+    </table>
+</div>
+
+<style>
+    /* Genel Arka Plan */
+    body {
+        background-color: #f8f3f8; /* Açık pastel pembe arka plan */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Başlık Stili */
+    h1 {
+        margin-bottom: 30px;
+        color: #9c27b0; /* Pastel mor */
+    }
+
+    /* Tablo Genel Stili */
+    .table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .pastel-table thead {
+        background-color: #fce4ec; /* Pastel pembe */
+    }
+
+    .pastel-table th {
+        color: #6a1b9a; /* Pastel mor */
+        text-align: center;
+        padding: 12px;
+    }
+
+    .pastel-table tr:nth-child(even) {
+        background-color: #f3e5f5; /* Çok hafif mor */
+    }
+
+    .pastel-table tr:nth-child(odd) {
+        background-color: #fce4ec; /* Çok hafif pembe */
+    }
+
+    .pastel-table td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Buton Stilleri */
+    .btn-purple {
+        background-color: #ba68c8; /* Orta pastel mor */
+        color: white;
+        border: none;
+    }
+
+        .btn-purple:hover {
+            background-color: #9c27b0; /* Daha koyu pastel mor */
         }
-    </tbody>
-</table>
+
+    .btn-pink {
+        background-color: #f06292; /* Orta pastel pembe */
+        color: white;
+        border: none;
+    }
+
+        .btn-pink:hover {
+            background-color: #e91e63; /* Daha koyu pastel pembe */
+        }
+</style>

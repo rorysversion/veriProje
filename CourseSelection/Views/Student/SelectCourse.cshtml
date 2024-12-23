@@ -1,46 +1,103 @@
 ﻿@model IEnumerable<CourseSelection.Models.Course>
 
-<h2>Kurs Listesi</h2>
+    <h2 class="text-center text-purple">Kurs Listesi</h2>
 
-@if (TempData["Message"] != null)
-{
-    <div class="alert alert-success">@TempData["Message"]</div>
-}
-<p>
-    <a asp-action="CourseSelection"  class="btn btn-info btn-sm">seçim yap</a>
-</p>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Kurs Adı</th>
-            <th>Kurs Kodu</th>
-            <th>Kredi</th>
-            <th>Zorunlu mu?</th>
-            
-            
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var course in Model)
-        {
-            
-            <tr>
-                <td>@course.CourseName</td>
-                <td>@course.CourseCode</td>
-                <td>@course.Credit</td>
-                <td>@(course.IsMandatory ? "Evet" : "Hayır")</td>
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success text-center" style="background-color: #f8bbd0; color: #6a1b9a; border: 1px solid #f06292;">
+            @TempData["Message"]
+        </div>
+    }
+    <p class="text-center">
+        <a asp-action="CourseSelection" class="btn btn-pink btn-sm">Seçim Yap</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table pastel-table">
+            <thead>
+                <tr class="table-header">
+                    <th>Kurs Adı</th>
+                    <th>Kurs Kodu</th>
+                    <th>Kredi</th>
+                    <th>Zorunlu mu?</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in Model)
+                {
+                    <tr>
+                        <td>@course.CourseName</td>
+                        <td>@course.CourseCode</td>
+                        <td>@course.Credit</td>
+                        <td>@(course.IsMandatory ? "Evet" : "Hayır")</td>
+                    </tr>
+                }
                 
-                
-                    @using (Html.BeginForm("SelectCourse", "Student", FormMethod.Post))
-                    {
-                        @Html.Hidden("courseId", course.CourseID)
-                        
-                       
-                    }
-                
-            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        /* Genel Arka Plan */
+        body {
+            background-color: #fce4ec; /* Açık pastel pembe */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-    </tbody>
-</table>
+
+        /* Başlık Stili */
+        h2 {
+            margin-bottom: 30px;
+            color: #9c27b0; /* Pastel mor */
+        }
+
+        /* Alert Mesaj Stili */
+        .alert {
+            font-size: 1.1rem;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        /* Tablo Genel Stili */
+        .table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        .pastel-table thead {
+            background-color: #f8bbd0; /* Hafif pastel pembe */
+        }
+
+        .pastel-table th {
+            color: #6a1b9a; /* Pastel mor */
+            text-align: center;
+            padding: 12px;
+        }
+
+        .pastel-table tr:nth-child(even) {
+            background-color: #f3e5f5; /* Hafif pastel mor */
+        }
+
+        .pastel-table tr:nth-child(odd) {
+            background-color: #fce4ec; /* Hafif pastel pembe */
+        }
+
+        .pastel-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Düğme Stilleri */
+        .btn-pink {
+            background-color: #f06292; /* Orta pastel pembe */
+            color: white;
+            border: none;
+        }
+
+            .btn-pink:hover {
+                background-color: #e91e63; /* Daha koyu pembe */
+            }
+    </style>
+
 
 

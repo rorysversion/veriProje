@@ -4,17 +4,70 @@
     ViewData["Title"] = "Öğrenci Detayları";
 }
 
-<h1>Öğrenci Detayları</h1>
+<h1 class="text-center text-pink">Öğrenci Detayları</h1>
 
-
-<div>
-    <h4>@Model.FirstName @Model.LastName</h4>
-    <p><strong>Email:</strong> @Model.Email</p>
-    <p><strong>Danışman ID:</strong> @Model.AdvisorID</p>
-    <p><strong>Kayıt Tarihi:</strong> @Model.EnrollmentDate.ToShortDateString()</p>
+<div class="card mx-auto" style="width: 50%; background-color: #fff0f5; border: 1px solid #ffb3d9; border-radius: 10px; padding: 20px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+    <h4 class="card-title text-center mb-4 text-deep-pink">@Model.FirstName @Model.LastName</h4>
+    <div class="card-body">
+        <p><strong>Email:</strong> <span class="text-pink">@Model.Email</span></p>
+        <p><strong>Danışman ID:</strong> <span class="text-muted">@Model.AdvisorID</span></p>
+        <p><strong>Kayıt Tarihi:</strong> <span class="text-deep-pink">@Model.EnrollmentDate.ToShortDateString()</span></p>
+    </div>
 </div>
 
-<p>
-    <a asp-action="SelectCourse" asp-route-studentId="@Model.StudentID" class="btn btn-info">Kurs Seç</a>
-    <a asp-action="SelectCourse" asp-route-id="@Model.StudentID" class="btn btn-secondary">Listeye Dön</a>
-</p>
+<div class="text-center mt-4">
+
+    <a asp-action="SelectCourse" asp-route-studentId="@Model.StudentID" class="btn btn-pink mx-2">Kurs Seç</a>
+    
+</div>
+
+<style>
+    body {
+        background-color: #ffe6f2; /* Açık pembe arka plan */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        color: #d63384; /* Parlak pembe */
+    }
+
+    .card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+    .text-pink {
+        color: #d63384; /* Parlak pembe */
+    }
+
+    .text-deep-pink {
+        color: #ff1493; /* Canlı koyu pembe */
+    }
+
+    .btn-pink {
+        background-color: #ff66a3; /* Doygun pembe */
+        border: none;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #ff1a75; /* Daha koyu pembe hover rengi */
+        }
+
+    .btn-light-pink {
+        background-color: #ffe6f2; /* Açık pembe */
+        border: 1px solid #ffb3d9;
+        color: #d63384;
+    }
+
+        .btn-light-pink:hover {
+            background-color: #ffb3d9; /* Daha koyu açık pembe hover rengi */
+            color: white;
+        }
+</style>
+
