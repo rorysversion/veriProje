@@ -1,38 +1,108 @@
 ﻿@model CourseSelection.Models.LoginViewModel
 
-<h2 class="text-center mt-4">Login</h2>
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow">
-                <div class="card-body">
-                    <form asp-action="LoginUser" method="post">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input asp-for="Username" id="email" class="form-control" placeholder="Enter your email" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input asp-for="PasswordHash" id="password" type="password" class="form-control" placeholder="Enter your password" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="role" class="form-label">Role</label>
-                            <select asp-for="Role" id="role" class="form-select">
-                                <option value="Student">Student</option>
-                                <option value="Advisor">Advisor</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn custom-pink-button w-100">Login</button>
-                    </form>
-                    @if (!string.IsNullOrEmpty(ViewBag.Message))
-                    {
-                        <p class="text-danger mt-3 text-center">@ViewBag.Message</p>
-                    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Background color in pastel brown */
+        body {
+            background-image: url('https://e7.pngegg.com/pngimages/413/139/png-clipart-books-background-books-retro.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Card design with pastel brown tones */
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Light pastel background for card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 30px;
+            background-color: #f3e6d5; /* Soft pastel brown for the form container */
+            border-radius: 10px;
+        }
+
+        /* Text styling with soft tones */
+        h2 {
+            color: #6c4f3d; /* Dark brown for headings */
+        }
+
+        label {
+            color: #8a6e58; /* Medium brown for form labels */
+        }
+
+        .form-control, .form-select {
+            background-color: #f1e4d1; /* Light pastel brown for input fields */
+            border: 1px solid #d1b79f;
+            color: #6c4f3d; /* Dark brown for text */
+        }
+
+        .btn {
+            background-color: #c17f53; /* Warm pastel brown button */
+            border: none;
+            color: white;
+        }
+
+            .btn:hover {
+                background-color: #9e693f; /* Darker brown on hover */
+            }
+
+        .text-danger {
+            color: #d9534f; /* Red for error message */
+        }
+
+        /* Ensuring the form is centered properly */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center mt-4">Login</h2>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <form asp-action="LoginUser" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input asp-for="Username" id="email" class="form-control" placeholder="Enter your email" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input asp-for="PasswordHash" id="password" type="password" class="form-control" placeholder="Enter your password" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="role" class="form-label">Role</label>
+                                <select asp-for="Role" id="role" class="form-select">
+                                    <option value="Student">Student</option>
+                                    <option value="Advisor">Advisor</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn custom-pink-button w-100">Login</button>
+                        </form>
+                        @if (!string.IsNullOrEmpty(ViewBag.Message))
+                        {
+                            <p class="text-danger mt-3 text-center">@ViewBag.Message</p>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</body>
+</html>
+
+
 
 
 
